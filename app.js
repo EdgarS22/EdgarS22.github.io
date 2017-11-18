@@ -69,7 +69,7 @@ function showSelections(){
   }
 
   if(compSelect == 1){
-    image(rockImage, 4500, 300);
+    image(rockImage, 450, 300);
   }else if(compSelect == 2){
     image(paperImage, 450, 300);
   }else if(compSelect == 3){
@@ -81,7 +81,7 @@ function showSelections(){
 
 function checkResult(){
 
-  if(userSelect == 1 && compSelect == 1 || userSelect == 2 && compSelect == 2 || userSelect == 3 && compSelect == 3){
+  if(userSelect == compSelect){
     text("It's a Draw!", 160, 100);
   }else if(userSelect == 1 && compSelect == 2 || userSelect == 2 && compSelect == 3 || userSelect == 3 && compSelect == 1){
     text("You Lose!", 200, 100);
